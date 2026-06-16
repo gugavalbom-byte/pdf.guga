@@ -3,7 +3,7 @@
    FONTS
    ========================================== */
 @font-face {
-    src: url(fonts/ndot-47-inspired-by-nothing.otf);
+    src: src: url(fonts/ndot-47-inspired-by-nothing.otf);;
     font-family: Ndot47;
 }
 
