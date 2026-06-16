@@ -207,6 +207,7 @@ h3 {
     border: 2px solid #F2BB06;     
     pointer-events: none; 
     z-index: 99999; /* Keeps it on top of your layout */
+    transform: translate(-50%, -50%);
     will-change: transform;
 }
 
@@ -243,6 +244,8 @@ h3 {
 }
 
 @media (max-width: 600px) {
+    
+    
     .mae {
         display: flex;
         flex-direction: column;
