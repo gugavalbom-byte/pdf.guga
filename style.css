@@ -201,8 +201,8 @@ h3 {
     height: 20px !important;
     border-radius: 50%;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     background-color: #F2BB06; 
     border: 2px solid #F2BB06;     
     pointer-events: none; 
@@ -306,4 +306,8 @@ h3 {
         max-width: 100%;
         margin-top: 5%;
     }
+
+    #custom-cursor {
+    display: none;
+}
 }
