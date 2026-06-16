@@ -201,8 +201,8 @@ h3 {
     height: 20px !important;
     border-radius: 50%;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
     background-color: #F2BB06; 
     border: 2px solid #F2BB06;     
     pointer-events: none; 
