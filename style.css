@@ -1,10 +1,39 @@
+    
+/* ==========================================
+   FONTS
+   ========================================== */
+@font-face {
+    src: url(fonts/ndot-47-inspired-by-nothing.otf);
+    font-family: Ndot47;
+}
 
+@font-face {
+    src: url(fonts/SourceCodePro-VariableFont_wght.ttf);
+    font-family: sourcecode;
+}
+
+/* ==========================================
+   GLOBAL RESET & GLOBAL FORCED CURSOR REMOVAL
+   ========================================== */
+* {
+    margin-bottom: 1%;
+    font-family: sourcecode, "helvetica", sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: none !important; /* Strips browser pointer across every tag */
+}
+
+/* ==========================================
+   BASE & STRUCTURE ELEMENTS
+   ========================================== */
+body {
+    background-color: #f5f5f5;
     max-width: 1500px;
     overflow-x: hidden;
     opacity: 0;
     transition: opacity 1s, transform 0.5s cubic-bezier(0.87, -0.01, 1, 1);
 }
-
 body.loaded {
     opacity: 1;
 }
