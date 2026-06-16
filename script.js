@@ -110,18 +110,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function createTrailDot(x, y) {
-        const dot = document.createElement("div");
-        dot.className = "trail-dot";
-        
-        // Centers each trail dot exactly where your mouse was located
-        dot.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%, -50%)`;
-        
-        document.body.appendChild(dot);
-
-        setTimeout(() => {
-            dot.remove();
-        }, 600);
-    }
-
 });
