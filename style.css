@@ -34,6 +34,7 @@ body {
     opacity: 0;
     transition: opacity 1s, transform 0.5s cubic-bezier(0.87, -0.01, 1, 1);
 }
+
 body.loaded {
     opacity: 1;
 }
