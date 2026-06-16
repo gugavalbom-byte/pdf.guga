@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Ndot47';
-    src: url('fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
+    /* Adding a leading slash / guarantees it searches from your root repository directory */
+    src: url('/pdf.guga/fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -99,7 +100,7 @@ img {
 }
 
 h2 {
-    font-family: Ndot47, "helvetica", sans-serif;
+    font-family: 'Ndot47', "helvetica", sans-serif;
     position: fixed;
     font-size: 3em;
     font-style: none;
