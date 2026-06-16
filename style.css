@@ -308,6 +308,7 @@ h3 {
     }
 
     #custom-cursor {
-    display: none;
+    background-color: #FFFFFF00; 
+    border: 2px solid #FFFFFF00; 
 }
 }
