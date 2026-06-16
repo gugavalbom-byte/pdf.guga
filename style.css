@@ -1,6 +1,9 @@
 @font-face {
-    src: url(fonts/ndot-47-inspired-by-nothing.otf);
-    font-family: Ndot47;
+    font-family: 'Ndot47';
+    src: url('fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
