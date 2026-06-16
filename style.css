@@ -249,8 +249,7 @@ h3 {
 @media (max-width: 600px) {
 
     #custom-cursor {
-        background-color: #F2BB0600; 
-        border: 2px solid #F2BB0600; 
+        display: none; 
     }
     
     .mae {
