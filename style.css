@@ -1,9 +1,5 @@
-    
-/* ==========================================
-   FONTS
-   ========================================== */
 @font-face {
-    src: src: url(fonts/ndot-47-inspired-by-nothing.otf);;
+    src: url(fonts/ndot-47-inspired-by-nothing.otf);
     font-family: Ndot47;
 }
 
