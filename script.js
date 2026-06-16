@@ -58,54 +58,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. DYNAMIC GALLERY LOADER (GALLERY PAGE)
     // ==========================================
     const galleryData = {
-        "manta": {
-            title: "Logo, Manta de Retalhos, 2025",
-            images: ["../imgs/manta_detail1.jpg", "../imgs/manta_detail2.jpg"]
-        },
         "chaos": {
             title: "CNTRL+CHAOS Magazine, 2025",
-            images: ["../imgs/cntrlChaos.gif"]
+            images: ["imgs/cntrlChaos.gif"]
         },
-        "instapark": {
-            title: "Concert visual, The Parkinglot band, 2025",
-            images: ["../imgs/park_photo1.jpg"]
-        },
-        "workart": {
-            title: "Motion Graphic, 2025",
-            images: ["../imgs/workart_still1.jpg", "../imgs/workart_still2.jpg"]
-        },
-        "casaviver": {
-            title: "Casa para viver, Modular type, 2025",
-            images: ["../imgs/casa_render1.jpg"]
-        },
-        "aa25": {
-            title: "Everything moves, Workshop, 2025",
-            images: ["../imgs/workshop_1.jpg", "../imgs/workshop_2.jpg"]
-        },
-        "vinil": {
-            title: "Vinyl addiction, animated poster, 2025",
-            images: ["../imgs/vinil_still.jpg"]
-        },
-        "bowie": {
-            title: "Blitz Mag, Bowie special edition, 2024",
-            images: ["../imgs/bowie_mockup1.jpg", "../imgs/bowie_mockup2.jpg"]
-        },
-        "closing": {
-            title: "Poster & animation, Ecosta Caparica, 2024",
-            images: ["../imgs/closing_detail.jpg"]
-        },
-        "thankyou": {
-            title: "Poster, Thank You Mama Caparica, 2023",
-            images: ["../imgs/thankyou_print.jpg"]
-        },
-        "logoencosta": {
-            title: "Logo, Ecosta Caparica, 2022",
-            images: ["../imgs/logo_variants.jpg"]
-        },
-        "flyerencosta": {
-            title: "Flyer, Ecosta Caparica, 2022",
-            images: ["../imgs/flyer_back.jpg", "../imgs/flyer_front.jpg"]
-        }
     };
 
     const urlParams = new URLSearchParams(window.location.search);
