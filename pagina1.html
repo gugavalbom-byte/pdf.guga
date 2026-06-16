@@ -1,151 +1,186 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-
         <meta charset="UTF-8">
-
         <title>pdf.guga</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .mae { cursor: pointer; }
+        </style>
     </head>
     <body>
-        <main>
+        <div id="custom-cursor"></div>
 
+        <main>
             <div id="transition-overlay"></div>
             <h2>works</h2>
-            <div class="mae">
-                <img src="./imgs/mais52video.gif" alt="img1p2">
+
+            
+            <div class="mae" data-project="venham52">
+                <h2 id="titulohide" style="display:none;">works</h2>
+                <img id="img-main" src="../imgs/mais52video.gif" alt="Venham mais 52">
                 <div class="grupo">
                     <div id="texto1">
                         <p>"Venham mais 52", animation, 2026</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/escravidao.gif" alt="img1p2">
+
+            
+            <div class="mae" data-project="escravidao">
+                <img id="img-main" src="../imgs/escravidao.gif" alt="Escravidão">
                 <div class="grupo">
                     <div id="texto1">
                         <p>"Todos têm direito a ser livres da escravidão", poster + animation, Gabriel & Inês Costa 2026</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/capitalism.gif" alt="img1p2">
+
+            
+            <div class="mae" data-project="capitalism">
+                <img id="img-main" src="../imgs/capitalism.gif" alt="Capitalism">
                 <div class="grupo">
                     <div id="texto1">
                         <p>"CAPITALISM", animation (concept), 2026</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/final.jpg" alt="img1p2">
+
+            
+            <div class="mae" data-project="manta">
+                <img id="img-main" src="../imgs/final.jpg" alt="Manta de Retalhos">
                 <div class="grupo">
                     <div id="texto1">
                         <p>Logo, Manta de Retalhos, 2025</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/cntrlChaos.gif" alt="img2p2">
+
+            
+            <div class="mae" data-project="chaos">
+                <img id="img-main" src="../imgs/cntrlChaos.gif" alt="CNTRL+CHAOS">
                 <div class="grupo">
                     <div id="texto1">
-                    <p>"CNTRL+CHAOS" about Anarchysm & Design,<br> Magazine (concept), Gabriel & Cle Costa, 2025</p>
+                        <p>"CNTRL+CHAOS" about Anarchysm & Design,<br> Magazine (concept), Gabriel & Cle Costa, 2025</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/instaPark.gif" alt="img2p2">
+
+            
+            <div class="mae" data-project="instapark">
+                <img id="img-main" src="../imgs/instaPark.gif" alt="InstaPark">
                 <div class="grupo">
                     <div id="texto1">
-                    <p>Concert visual, The Parkinglot band, 2025</p>
+                        <p>Concert visual, The Parkinglot band, 2025</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/workArt.gif" alt="img2p2">
+
+            
+            <div class="mae" data-project="workart">
+                <img id="img-main" src="../imgs/workArt.gif" alt="Work Art">
                 <div class="grupo">
                     <div id="texto1">
-                    <p>Motion Graphic, 2025</p>
+                        <p>Motion Graphic, 2025</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/casaViver.jpg" alt="img2p2">
+
+            
+            <div class="mae" data-project="casaviver">
+                <img id="img-main" src="../imgs/casaViver.jpg" alt="Casa Viver">
                 <div class="grupo">
                     <div id="texto1">
-                    <p>Casa para viver, Modular type (concept), 2025</p>
+                        <p>Casa para viver, Modular type (concept), 2025</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/AA25.gif" alt="img2p2">
+
+            
+            <div class="mae" data-project="aa25">
+                <img id="img-main" src="../imgs/AA25.gif" alt="AA25">
                 <div class="grupo">
                     <div id="texto1">
-                    <p>Everything moves, Workshop (Instructor),<br> E.S. Antonio Arroio 2025</p>
+                        <p>Everything moves, Workshop (Instructor),<br> E.S. Antonio Arroio 2025</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/vinilAnimatic.gif" alt="img2p2">
+
+            
+            <div class="mae" data-project="vinil">
+                <img id="img-main" src="../imgs/vinilAnimatic.gif" alt="Vinyl Addiction">
                 <div class="grupo">
                     <div id="texto1">
-                    <p>Vinyl addiction, animated poster, 2025</p>
+                        <p>Vinyl addiction, animated poster, 2025</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/bowieMag.png" alt="img2p2">
+
+            
+            <div class="mae" data-project="bowie">
+                <img id="img-main" src="../imgs/bowieMag.png" alt="Bowie Mag">
                 <div class="grupo">
                     <div id="texto1">
-                    <p>Blitz Mag, Bowie special edition (concept), 2024</p>
+                        <p>Blitz Mag, Bowie special edition (concept), 2024</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/closing.gif" alt="img2p2">
+
+            
+            <div class="mae" data-project="closing">
+                <img id="img-main" src="../imgs/closing.gif" alt="Closing">
                 <div class="grupo">
                     <div id="texto1">
-                    <p>Poster & animation, Ecosta Caparica, 2024</p>
+                        <p>Poster & animation, Ecosta Caparica, 2024</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/thankYou.jpg" alt="img2p2">
+
+            
+            <div class="mae" data-project="thankyou">
+                <img id="img-main" src="../imgs/thankYou.jpg" alt="Thank You">
                 <div class="grupo">
                     <div id="texto1">
-                    <p>Poster, Thank You Mama Caparica, 2023</p>
+                        <p>Poster, Thank You Mama Caparica, 2023</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/logoEncosta.png" alt="img2p2">
+
+            
+            <div class="mae" data-project="logoencosta">
+                <img id="img-main" src="../imgs/logoEncosta.png" alt="Logo Encosta">
                 <div class="grupo">
                     <div id="texto1">
-                    <p>Logo, Ecosta Caparica, 2022</p>
+                        <p>Logo, Ecosta Caparica, 2022</p>
                     </div>
                 </div>
             </div>
-            <div class="mae">
-                <img src="./imgs/flyerEncosta.png" alt="img2p2">
+
+            
+            <div class="mae" data-project="flyerencosta">
+                <img id="img-main" src="../imgs/flyerEncosta.png" alt="Flyer Encosta">
                 <div class="grupo">
                     <div id="texto1">
-                    <p>flyer, Ecosta Caparica, 2022</p>
+                        <p>flyer, Ecosta Caparica, 2022</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Instagram Link -->
             <div class="mae">
                 <div class="grupo">
                     <div id="textoIG">
-                    <a href="https://www.instagram.com/pdf.guga/" target="_blank" class="transition-link">More on my IG</a>
+                        <a href="https://www.instagram.com/pdf.guga/" target="_blank" class="transition-link">More on my IG</a>
                     </div>
                 </div>
             </div>
-            <a href="index.html" id="fixedbutton"> &lt&lt&lt&lt&lt&lt&lt&lt&lt&lt&lt&lt&ltback home </a>
+
+            <!-- Back Button -->
+            <a href="../codigo/index.html" id="fixedbutton"> &lt&lt&lt&lt&lt&lt&lt&lt&lt&lt&lt&lt&ltback home </a>
             
         </main>
 
-         <script src="script.js"></script>
-
+        <script src="script.js"></script>
     </body>
 </html>
