@@ -60,7 +60,7 @@ body.loaded {
 }
 
 .mae2 {
-    display; block;
+    display: block;
 }
 
 .grupo {
@@ -94,6 +94,16 @@ img {
 #gallery-content {
     max-width: 50%;
     margin-bottom: 0;
+}
+
+/* --- HOVER EFFECT FOR INJECTED IMAGES --- */
+.gallery-img {
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* ==========================================
@@ -299,25 +309,4 @@ h3 {
     }
 
     #titulohide {
-        font-size: 5vw;
-        margin-top: 3%;
-        margin-right: 2%;
-        position: absolute;
-        display: block;
-    }
-
-    #fixedbutton {
-        font-size: 4vw;
-        bottom: 2%;
-        right: 5%;
-    }
-
-    .container {
-        grid-template-columns: auto;
-    }
-
-    #img2 {
-        max-width: 100%;
-        margin-top: 5%;
-    }
-}
+        font-size: 5
