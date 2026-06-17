@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Vinyl Addiction, 2025",
             images: ["imgs/vinilAnimatic.gif", "imgsGallery/B&W_recordaddiction.jpeg"]
         },
-        "B&W_dragonfly": {
-            title: "Vinyl Addiction, 2025",
+        "BW_dragonfly": {
+            title: "dragonfly,, 2025",
             images: ["imgs/dragonflyAnimatic.gif", "imgsGallery/B&W_dragonfly.jpeg"]
         }
     };
