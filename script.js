@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "capitalism": {
             title: "CAPITALISM, 2026",
-            images: ["imgsGallery/capitalism_1.jpg", "imgsGallery/capitalism_2.jpg", "imgsGallery/capitalism_3.jpg", "imgsGallery/capitalism_4.jpg", "imgsGallery/capitalism_5.jpg",
-                     "imgsGallery/capitalism_6.jpg", "imgsGallery/capitalism_7.jpg", "imgsGallery/capitalism_8.jpg", "imgsGallery/capitalism_9.jpg", "imgsGallery/capitalism_10.jpg"]
+            images: ["imgsGallery/capitalism_1.jpeg", "imgsGallery/capitalism_2.jpeg", "imgsGallery/capitalism_3.jpeg", "imgsGallery/capitalism_4.jpeg", "imgsGallery/capitalism_5.jpeg",
+                     "imgsGallery/capitalism_6.jpeg", "imgsGallery/capitalism_7.jpeg", "imgsGallery/capitalism_8.jpeg", "imgsGallery/capitalism_9.jpeg", "imgsGallery/capitalism_10.jpeg"]
         },
         "manta_logo": {
             title: "Manta Logo, 2025",
@@ -93,11 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "vinylAddiction": {
             title: "Vinyl Addiction, 2025",
-            images: ["imgs/vinilAnimatic.gif", "imgsGallery/B&W_recordaddiction.jpg"]
+            images: ["imgs/vinilAnimatic.gif", "imgsGallery/B&W_recordaddiction.jpeg"]
         },
         "B&W_dragonfly": {
             title: "Vinyl Addiction, 2025",
-            images: ["imgs/dragonflyAnimatic.gif", "imgsGallery/B&W_dragonfly.jpg"]
+            images: ["imgs/dragonflyAnimatic.gif", "imgsGallery/B&W_dragonfly.jpeg"]
         }
     };
 
