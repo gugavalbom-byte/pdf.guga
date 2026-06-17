@@ -116,6 +116,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 const imgElement = document.createElement("img");
                 imgElement.src = imagePath;
                 imgElement.alt = project.title;
+                
+                // --- HOOVER CLASS ADDED HERE ---
+                imgElement.classList.add("gallery-img"); 
+                
                 imgElement.style.width = "100%"; 
                 imgElement.style.display = "block";
                 imgElement.style.marginBottom = "25px";
