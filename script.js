@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
             images: ["imgsGallery/mantaLogo_1.png", "imgsGallery/mantaLogo_2.png", "imgsGallery/mantaLogo_3.png", "imgsGallery/mantaLogo_4.png"]
         },
         "chaos": {
-            title: "CNTRL+CHAOS", 2025",
+            title: "CNTRL+CHAOS, 2025",
             images: ["imgsGallery/chaos_1.jpeg", "imgsGallery/chaos_2.jpeg", "imgsGallery/chaos_3.jpeg", "imgsGallery/chaos_4.jpeg"]
         },
         "Motion": {
