@@ -80,15 +80,15 @@ document.addEventListener("DOMContentLoaded", () => {
             images: ["imgsGallery/chaos_1.jpeg", "imgsGallery/chaos_2.jpeg", "imgsGallery/chaos_3.jpeg", "imgsGallery/chaos_4.jpeg"]
         },
         "Motion": {
-            title: "untitled motion", 2025",
+            title: "untitled motion, 2025",
             images: ["imgs/workArt.gif"]
         },
         "vinylAddiction": {
-            title: "Vinyl Addiction", 2025",
+            title: "Vinyl Addiction, 2025",
             images: ["imgs/vinilAnimatic.gif", "imgsGallery/B&W_recordaddiction.jpeg"]
         },
         "B&W_dragonfly": {
-            title: "Vinyl Addiction", 2025",
+            title: "Vinyl Addiction, 2025",
             images: ["imgs/dragonflyAnimatic.gif", "imgsGallery/B&W_dragonfly.jpeg"]
         },
     };
