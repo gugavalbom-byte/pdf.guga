@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // ==========================================
-    // 3. DYNAMIC GALLERY LOADER (GALLERY PAGE)
+    // 3. DYNAMIC GALLERY LOADER & HOVER OVERLAY
     // ==========================================
     const galleryData = {
         "mais52": {
@@ -106,23 +106,37 @@ document.addEventListener("DOMContentLoaded", () => {
     const pageTitle = document.getElementById("gallery-title");
     const imageContainer = document.getElementById("gallery-content");
 
-    // Only attempt to run if we are actually on the gallery page elements
     if (pageTitle && imageContainer) {
         if (activeProjectKey && galleryData[activeProjectKey]) {
             const project = galleryData[activeProjectKey];
             pageTitle.textContent = project.title;
 
+            // Generate an isolated overlay popup wrapper via script
+            const popupWindow = document.createElement("div");
+            popupWindow.id = "image-popup-window";
+            document.body.appendChild(popupWindow);
+
             project.images.forEach(imagePath => {
                 const imgElement = document.createElement("img");
                 imgElement.src = imagePath;
                 imgElement.alt = project.title;
-                
-                // --- HOOVER CLASS ADDED HERE ---
                 imgElement.classList.add("gallery-img"); 
                 
                 imgElement.style.width = "100%"; 
                 imgElement.style.display = "block";
                 imgElement.style.marginBottom = "25px";
+
+                // --- NEW POPUP HOVER HANDLERS ---
+                imgElement.addEventListener("mouseenter", () => {
+                    popupWindow.innerHTML = `<img src="${imagePath}" alt="Zoom View">`;
+                    popupWindow.classList.add("visible");
+                });
+
+                imgElement.addEventListener("mouseleave", () => {
+                    popupWindow.classList.remove("visible");
+                    popupWindow.innerHTML = "";
+                });
+
                 imageContainer.appendChild(imgElement);
             });
         } else if (activeProjectKey) {
@@ -137,7 +151,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const cursor = document.getElementById("custom-cursor");
 
     if (cursor) {
-        // Defined the missing function directly inside the block scope
         function createTrailDot(x, y) {
             const dot = document.createElement("div");
             dot.className = "trail-dot";
@@ -145,7 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
             dot.style.top = `${y}px`;
             document.body.appendChild(dot);
             
-            // Auto-removes dot from DOM after 500ms to maintain great performance
             setTimeout(() => {
                 dot.remove();
             }, 500);
