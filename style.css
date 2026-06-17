@@ -92,7 +92,8 @@ img {
 }
 
 #gallery-content {
-    max-width: none;
+    max-width: 50%;
+    margin-bottom: 0;
 }
 
 /* ==========================================
