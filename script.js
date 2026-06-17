@@ -11,6 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("loaded");
     });
 
+    // Fixes the "blank page on back button" cache issue
+    window.addEventListener("pageshow", (event) => {
+        if (event.persisted) {
+            document.body.classList.add("loaded");
+            if (overlay) overlay.classList.remove("active");
+        }
+    });
+
     // Helper function to handle outgoing transitions safely
     function handlePageExit(targetUrl) {
         if (overlay) {
@@ -60,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const galleryData = {
         "mais52": {
             title: "Venham mais 52, 2026",
-            images: ["imgs/mais52video.gif", "imgsArchive/45.png",]
+            images: ["imgs/mais52video.gif", "imgsArchive/45.png"]
         },
         "escravidao": {
             title: "Escravidão, 2026",
@@ -90,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "B&W_dragonfly": {
             title: "Vinyl Addiction, 2025",
             images: ["imgs/dragonflyAnimatic.gif", "imgsGallery/B&W_dragonfly.jpeg"]
-        },
+        }
     };
 
     const urlParams = new URLSearchParams(window.location.search);
@@ -122,19 +130,25 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================================
     // 4. CUSTOM CIRCLE MOUSE TRAIL
     // ==========================================
-    // ==========================================
-    // 4. CUSTOM CIRCLE MOUSE TRAIL (PERFECT ALIGNMENT)
-    // ==========================================
-    // ==========================================
-    // 4. CUSTOM CIRCLE MOUSE TRAIL (PERFECT CENTERED ALIGNMENT)
-    // ==========================================
     const cursor = document.getElementById("custom-cursor");
 
     if (cursor) {
-        document.addEventListener("mousemove", (e) => {
-            // Combines tracking coordinates and centering corrections into one calculation string
-            cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
+        // Defined the missing function directly inside the block scope
+        function createTrailDot(x, y) {
+            const dot = document.createElement("div");
+            dot.className = "trail-dot";
+            dot.style.left = `${x}px`;
+            dot.style.top = `${y}px`;
+            document.body.appendChild(dot);
+            
+            // Auto-removes dot from DOM after 500ms to maintain great performance
+            setTimeout(() => {
+                dot.remove();
+            }, 500);
+        }
 
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
             createTrailDot(e.clientX, e.clientY);
         });
     }
