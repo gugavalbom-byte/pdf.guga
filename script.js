@@ -58,9 +58,38 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. DYNAMIC GALLERY LOADER (GALLERY PAGE)
     // ==========================================
     const galleryData = {
+        "mais52": {
+            title: "Venham mais 52, 2026",
+            images: ["imgs/mais52video.gif", "imgsArchive/45.png",]
+        },
+        "escravidao": {
+            title: "Escravidão, 2026",
+            images: ["imgs/escravidao.gif"]
+        },
+        "capitalism": {
+            title: "CAPITALISM, 2026",
+            images: ["imgsGallery/capitalism_1.jpeg", "imgsGallery/capitalism_2.jpeg", "imgsGallery/capitalism_3.jpeg", "imgsGallery/capitalism_4.jpeg", "imgsGallery/capitalism_5.jpeg",
+                     "imgsGallery/capitalism_6.jpeg", "imgsGallery/capitalism_7.jpeg", "imgsGallery/capitalism_8.jpeg", "imgsGallery/capitalism_9.jpeg", "imgsGallery/capitalism_10.jpeg"]
+        },
+        "manta_logo": {
+            title: "Manta Logo, 2025",
+            images: ["imgsGallery/mantaLogo_1.png", "imgsGallery/mantaLogo_2.png", "imgsGallery/mantaLogo_3.png", "imgsGallery/mantaLogo_4.png"]
+        },
         "chaos": {
-            title: "CNTRL+CHAOS Magazine, 2025",
-            images: ["imgs/cntrlChaos.gif"]
+            title: "CNTRL+CHAOS", 2025",
+            images: ["imgsGallery/chaos_1.jpeg", "imgsGallery/chaos_2.jpeg", "imgsGallery/chaos_3.jpeg", "imgsGallery/chaos_4.jpeg"]
+        },
+        "Motion": {
+            title: "untitled motion", 2025",
+            images: ["imgs/workArt.gif"]
+        },
+        "vinylAddiction": {
+            title: "Vinyl Addiction", 2025",
+            images: ["imgs/vinilAnimatic.gif", "imgsGallery/B&W_recordaddiction.jpeg"]
+        },
+        "B&W_dragonfly": {
+            title: "Vinyl Addiction", 2025",
+            images: ["imgs/vinilAnimatic.gif", "imgsGallery/B&W_dragonfly.jpeg"]
         },
     };
 
