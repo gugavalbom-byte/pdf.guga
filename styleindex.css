@@ -137,6 +137,11 @@ article {
         font-size: 15vw;
     }
 
+    #custom-cursor {
+    background-color: #F2BB0600; 
+    border: 2px solid #F2BB0600;
+    }
+
     .center {
         margin-top: 0%;
     }
